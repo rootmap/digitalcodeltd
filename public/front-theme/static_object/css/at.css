@@ -1,0 +1,86 @@
+/* CSS Document */
+
+.scrollarea {
+width: 400px;
+height: 100px;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+
+
+.bg_index
+	{
+		background-color: #FFFFFF;
+		background-image: url(../images/bg_index.jpg);
+		background-repeat: repeat-x;
+		background-position: top;}
+		
+		
+.bg_inner
+	{
+		background-color:  #FFFFFF;
+		background-image: url(../images/bg_inner.jpg);
+		background-repeat: repeat-y;
+		background-position: left;
+		}
+
+	
+.headline{
+font-family: "Courier New", Courier, monospace;
+font-size:40px;
+color: #D2691E;
+font-weight: normal;
+font-style: inherit;
+text-align: left;
+}
+
+.headline1{
+font-family: "Courier New", Courier, monospace;
+font-size:40px;
+color: #D2691E;
+font-weight: normal;
+font-style: inherit;
+text-align: center;
+}
+
+.menutext1{
+font-family:  "Century Gothic", Verdana, Arial, Helvetica, sans-serif;
+font-size:15px;
+line-height: 24px;
+color: #777777;
+font-weight: inherit;  
+text-align: justify;
+}
+
+
+.menutext2{
+font-family: "Century Gothic", Verdana, Arial, Helvetica, sans-serif;
+font-size:15px;
+line-height: 24px;
+color: #777777;
+text-align: center;
+}
+
+
+
+.menutext3{
+background-image: url(../images/vegetab.jpg);
+width: 1000px;
+font-family: "Century Gothic", Verdana, Arial, Helvetica, sans-serif;
+font-size:15px;
+line-height: 24px;
+color: #9E948B;
+text-align: center;
+}
+
+.menutext4{
+background-image: url(../images/vegetable.jpg);
+font-family: "Century Gothic", Verdana, Arial, Helvetica, sans-serif;
+font-size:15px;
+line-height: 24px;
+color: #000000;
+text-align: justify;
+}
+
+
