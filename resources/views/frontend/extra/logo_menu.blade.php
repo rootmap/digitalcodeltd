@@ -8,6 +8,23 @@ $otherExtraPage=$objSTD->otherExtraPage();
 }
 
 @media (min-width: 1281px) {
+    .del-info-card{
+        margin-top: 0px;
+    }
+    .sticky .logo a img {
+        margin-top: 18px !important;
+        height: 60px;
+        /* margin-left: 55PX; */
+    }
+    .mbtext{
+        display: none;
+        background-color: #fff;
+        color: #b57c00;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 45px;
+    }
     header.top-head .logo a 
     {
        
@@ -33,6 +50,18 @@ $otherExtraPage=$objSTD->otherExtraPage();
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+    .del-info-card{
+        margin-top: 0px;
+    }
+    .mbtext{
+        display: none;
+        background-color: #fff;
+        color: #b57c00;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 45px;
+    }
     header.top-head .logo a 
     {
         
@@ -62,6 +91,18 @@ $otherExtraPage=$objSTD->otherExtraPage();
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .del-info-card{
+        margin-top: 0px;
+    }
+    .mbtext{
+        display: none;
+        background-color: #fff;
+        color: #b57c00;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 45px;
+    }
    header.top-head .logo a 
     {
         
@@ -104,6 +145,18 @@ $otherExtraPage=$objSTD->otherExtraPage();
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .del-info-card{
+        margin-top: 0px;
+    }
+    .mbtext{
+        display: none;
+        background-color: #fff;
+        color: #b57c00;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 45px;
+    }
     header.top-head .logo a 
     {
         width: 100%;
@@ -145,6 +198,18 @@ $otherExtraPage=$objSTD->otherExtraPage();
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+    .del-info-card{
+        margin-top: 0px;
+    }
+    .mbtext{
+        display: none;
+        background-color: #fff;
+        color: #b57c00;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 45px;
+    }
     header.top-head .logo a 
     {
         height: 56px;
@@ -187,19 +252,51 @@ $otherExtraPage=$objSTD->otherExtraPage();
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    header.top-head .logo a 
+    .right {
+        float: none !important;
+        text-align: center;
+    }
+    .del-info-card{
+        margin-top: 15px;
+    }
+    .sticky .logo a img{
+        margin-top: 50px !important;
+        /*height: 50px;*/
+        margin-left: 55PX;
+    }
+    .mbtext{
+        display: block;
+        background-color: #fff;
+        color: #b57c00;
+        font-weight: bold;
+        font-size: 24px;
+        margin-left: 45px;
+    }
+    header.top-head .logo a {
+        /*height: 15px;*/
+        width: 280px;
+        margin-top: -7px;
+    }
+
+    /*header.top-head .logo a
     {
         height: 56px;
         width: 280px;
         margin-top: -7px;
-    }
-    .logo img{
-        width: 120px;
-        height: 56;
-        margin-top:2px;
-        margin-left: 30px;
+    }*/
+    /*.logo img{*/
+        /*width: 120px;*/
+        /*height: 56;*/
+        /*margin-top:2px;*/
+        /*margin-left: 30px;*/
         /*top: -20px;*/
         /*position: absolute;*/
+    /*}*/
+    .logo img {
+        width: 170px;
+        margin-left: 150px;
+        top: -47px;
+        position: absolute;
     }
     .mobileHide a {
         display: block;
@@ -225,6 +322,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
 }
 
 @media (min-width: 0px) and (max-width: 319px) {
+    .mbtext{
+        display: block;
+        background-color: #fff;
+        color: #b57c00;
+        font-weight: bold;
+        font-size: 24px;
+        margin-left: 45px;
+    }
     header.top-head .logo a 
     {
         height: 42px;
@@ -272,32 +377,45 @@ $otherExtraPage=$objSTD->otherExtraPage();
             <div class="logo cell-3">
                 {{-- <a style="" href="{{url('home')}}"></a> --}}
                 <a href="{{url('home')}}">
-                    <img src="{{url('upload/logo/'.$Seo->site_logo)}}" >
+{{--                    <img src="{{url('upload/logo/'.$Seo->site_logo)}}" >--}}
+                    <img src="{{url('/')}}/images/logo.jpg">
                 </a>
-                <div class="mobileHide"> 
-                    <a href="skype:{{$ContactDetail->contact_phone}}?call"><i class="fa fa-phone"></i> Call Us: <b>{{$ContactDetail->contact_phone}}</b></a> 
+                <div class="mobileHide">
+                    <a href="#"><span style="margin-left:0 !important" id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span> <b style="margin-left:5px;">View Basket</b></a>
                     @if (Request::path() == 'home')
                     <div class="buttonlogo">
-                        <a class="btn btn-md btn-orange btn-outlined fx animated fadeInDown" href="{{url('order-item')}}" data-animate="fadeInDown" data-animation-delay="700" style="animation-delay: 700ms;"> <span><i class="fa fa-shopping-cart"></i>Order Your Food Online</span> </a>
+                        {{--<a class="btn btn-md btn-orange btn-outlined fx animated fadeInDown" href="{{url('order-item')}}" data-animate="fadeInDown" data-animation-delay="700" style="animation-delay: 700ms;"> <span><i class="fa fa-shopping-cart"></i>Order Your Food Online</span> </a>--}}
+
+                        <a class="btn btn-md btn-3d btn-custom-one fx animated fadeInUp" href="{{url('order-item')}}" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;width: 175px !important;background: #b71c1c !important;-webkit-box-shadow: 0 5px 0 #CBA574;box-shadow: 0 5px 0 #CBA574;font-size: 16px; padding-left: 10px; padding-right: 10px;margin-top: 20px;">
+                            <span class="line-one" style="color:#fff;">TAKE-AWAY MENU</span>
+                            <span class="line-two">PLACE YOUR ORDER</span>
+                        </a>
                     </div>
                     @endif    
                     
                 </div>
-                <div class="cart-icon fx mobileloginmenu" id="mobileCartMenuShort" data-animate="fadeInRight" style="position: absolute;
-    right: 0;
-    top: -8px;">
-                    <div class="cart-heading">
-                        <i class="fa fa-shopping-cart"></i><span id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span>
-                    </div>
-                </div>
+                {{--<div class="cart-icon fx mobileloginmenu" id="mobileCartMenuShort" data-animate="fadeInRight" style="position: absolute; right: 0; top: -8px;">--}}
+                    {{--<div class="cart-heading">--}}
+                        {{--<i class="fa fa-shopping-cart"></i><span id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
             <div class="cell-9 top-menu">
 
                 <!-- top navigation menu start -->
                 <nav class="top-nav mega-menu">
                     <ul>
-                        <li class="{{ Request::path() == 'home' ? 'selected' : '' }}"><a href="{{url('home')}}"><i class="fa fa-home"></i><span>Home</span></a> </li>
-                        <li class="{{ Request::path() == 'order-item' ? 'selected' : '' }}"><a href="{{url('order-item')}}"><i class="fa fa-cart-plus"></i><span>Online Order</span></a>
+                        <li class="{{ Request::path() == 'home' ? 'selected' : '' }}">
+                            <a href="{{url('home')}}">
+{{--                                <i class="fa fa-home"></i>--}}
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="{{ Request::path() == 'order-item' ? 'selected' : '' }}">
+                            <a href="{{url('order-item')}}">
+{{--                                <i class="fa fa-cart-plus"></i>--}}
+                                <span>Online Orders</span>
+                            </a>
                             @if(isset($mainmenu))
                             <ul>
                                 <li>
@@ -311,9 +429,30 @@ $otherExtraPage=$objSTD->otherExtraPage();
                             </ul>
                             @endif
                         </li>
-                        <li class="{{ Request::path() == 'our-offer' ? 'selected' : '' }}"><a href="{{url('our-offer')}}"><i class="fa fa-gift"></i><span>Our Offers</span></a></li>
-                        <li class="{{ Request::path() == 'table-booking' ? 'selected' : '' }}"><a href="{{url('table-booking')}}"><i class="fa fa-cutlery"></i><span>Table Booking</span></a></li>
-                        <li class="{{ Request::path() == 'gallery' ? 'selected' : '' }}"><a href="{{url('gallery')}}"><i class="fa fa-picture-o"></i><span>Gallery</span></a></li>
+                        <li class="{{ Request::path() == 'our-offer' ? 'selected' : '' }}">
+                            <a href="{{url('our-offer')}}">
+{{--                                <i class="fa fa-gift"></i>--}}
+                                <span>Taj Offers</span>
+                            </a>
+                        </li>
+                        <li class="{{ Request::path() == 'table-booking' ? 'selected' : '' }}">
+                            <a href="{{url('table-booking')}}">
+{{--                                <i class="fa fa-cutlery"></i>--}}
+                                <span>Table Booking</span>
+                            </a>
+                        </li>
+                        <li class="{{ Request::path() == 'gallery' ? 'selected' : '' }}">
+                            <a href="{{url('gallery')}}">
+{{--                                <i class="fa fa-picture-o"></i>--}}
+                                <span>Taj Gallery</span>
+                            </a>
+                        </li>
+                        <li class="gallery">
+                            <a href="{{url('gallery')}}">
+{{--                                <i class="fa fa-picture-o"></i>--}}
+                                <span>info</span>
+                            </a>
+                        </li>
                         
                      {{--@if(count($otherExtraPage)>0)
                             <li class="{{ Request::path() == 'order-item' ? 'selected' : '' }}"><a href="javascript:void(0);"><i class="fa fa-info"></i><span>INFO</span></a>
@@ -327,10 +466,18 @@ $otherExtraPage=$objSTD->otherExtraPage();
                         </li>
                         @endif--}}
                         
-                         <li class="{{ Request::path() == 'reviews' ? 'selected' : '' }}"><a href="{{url('reviews')}}"><i class="fa fa-comments"></i><span>Review</span></a></li>
-                        
-
-                        <li class="{{ Request::path() == 'contact-us' ? 'selected' : '' }}"><a href="{{url('contact-us')}}"><i class="fa fa-phone"></i><span>Contact US</span></a></li>
+                         <li class="{{ Request::path() == 'reviews' ? 'selected' : '' }}">
+                             <a href="{{url('reviews')}}">
+{{--                                 <i class="fa fa-comments"></i>--}}
+                                 <span>Feedback</span>
+                             </a>
+                         </li>
+                        <li class="{{ Request::path() == 'contact-us' ? 'selected' : '' }}">
+                            <a href="{{url('contact-us')}}">
+{{--                                <i class="fa fa-phone"></i>--}}
+                                <span>Contact</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- top navigation menu end -->
@@ -348,8 +495,6 @@ $otherExtraPage=$objSTD->otherExtraPage();
                     </div>
                 </div>
                 <!-- top search end -->
-
-                
 
             </div>
         </div>

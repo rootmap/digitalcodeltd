@@ -49,7 +49,7 @@
 	if($('.top-nav').length > 0){
 	if (!$('body').hasClass('one-page')){
 		var men = $('.top-nav > ul').html();	
-		$('<a href="#" class="menuBtn"><i class="fa fa-bars"></i></a><div class="responsive-nav"></div>').prependTo('body');
+		$('<a href="#" class="menuBtn"><i class="fa fa-bars"></i></a> <span class="mbtext">MENU</span><div class="responsive-nav"></div>').prependTo('body');
 		$('.responsive-nav').html('<h3>Menu Navigation</h3><ul>'+men+'</ul>');
 		if($('html').css('direction') == 'rtl'){
 			$('.responsive-nav h3').text('');

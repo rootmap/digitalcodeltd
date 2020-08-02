@@ -36,8 +36,8 @@
                             data-disamount-limit="0" data-discount="0%"
                         @endif
                     >
-                        <a href="{{url('shopping-cart')}}"><i class="fa fa-shopping-cart"></i>
-                            0 item(s) - £0.00
+                        <a href="{{url('shopping-cart')}}" class="font-"><i class="fa fa-shopping-cart"></i>
+                            0 item(s) - £0.00 View Cart
                         </a>
                     </li>
                     <!-- <li><a href="siteMap.php"><i class="fa fa-sitemap"></i>Site Map</a></li> -->

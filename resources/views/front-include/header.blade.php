@@ -90,7 +90,7 @@ $brandAll=$arrayDD['brn'];
                             <li class="root root-1 ">
                                 <div class="root-item no-description">
                                     <a href="{{url('home')}}">
-                                        <div class="title title_font"><span class="title-text">Home</span><span class="icon-has-sub icon-angle-down"></span></div>
+                                        <div class="title title_font"><span class="title-text">Home112</span><span class="icon-has-sub icon-angle-down"></span></div>
                                     </a>
                                 </div>
                             </li>

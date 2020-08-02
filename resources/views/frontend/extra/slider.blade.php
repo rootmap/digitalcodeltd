@@ -9,7 +9,7 @@
                     <img alt="{{$sld->name}}" src="{{url('front-theme/images/slider/dummy.png')}}" data-lazyload="{{url('upload/slider/'.$sld->sliderimage)}}" data-duration="1000" data-ease="Linear.easeNone">
                 </li>
                 @endforeach
-            @endif            
+            @endif
         </ul>
     </div>
 </div>

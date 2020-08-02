@@ -24,18 +24,63 @@ $Seo=$objSTD->Seo();
                     <div class="container">
                         <div class="row">
                             <div class="cell-9">
-                                <h3 class="center block-head"><span class="main-color">{{$WelcomeContent->title}}</span></h3>
+                                <h3 class="center block-head">
+                                    <span class="main-intro">
+                                        <!-- {{$WelcomeContent->title}} -->
+                                        Welcome to the Taj Indian Restaurant & Take-away
+                                    </span>
+                                    <span class="sub-intro">Serving Indian Cusine to the people of Guernsey since 1989</span>
+                                </h3>
                                 <div class="cell-12">
-                                    <p class="margin-bottom-0">
+                                    <div class="cell-4 open-timing">
+                                        <span>Open: 12 till 2pm</span>
+                                    </div>
+                                    <div class="cell-4 open-timing">
+                                        <span>5.30pm till late</span>
+                                    </div>
+                                    <div class="cell-4 open-timing">
+                                        <span>7 days-a-week</span>
+                                    </div>
+                                    <div class="cell-12 reserve-headline">
+                                        <P>Reserve your table online for a memorable night out at the Taj</P>
+                                    </div>
+                                    <div class="cell-12 instruction">
+                                        <P>Thank you for choosing a Taj take-away meal<br>If your order is not for a specific time or date, please allow 30 minutes<br> for your pick-up from our Restaurant.</P>
+                                    </div>
+                                    <div class="cell-12 instruction">
+                                        <P>We aim to honour our 30 minute delivery of orders. An order for three or more people, or during our busy periods Friday & Saturday evenings 6 till 8 - allow 45 minutes for your food order pick-up</P>
+                                        <P class="red-text">We're sorry that we no longer offer home delivery service</P>
+                                    </div>
+                                    <div class="cell-12 home-buttons">
+                                        <a class="btn btn-md btn-3d btn-custom-one fx animated fadeInUp" href="#" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                                            <span class="line-one">TAKE-AWAY MENU</span>  
+                                            <span class="line-two">PLACE YOUR ORDER</span>                                              
+                                        </a>
+                                        <a class="btn btn-md btn-3d btn-custom-two fx animated fadeInUp" href="#" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                                            <span class="line-one">BOOK YOUR TABLE</span>  
+                                            <span class="line-two">AT THE TAJ</span> 
+                                        </a>
+                                    </div>
+                                    <div class="cell-12 home-buttons">
+                                        <a class="btn btn-md btn-3d btn-custom-three fx animated fadeInUp" href="#" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                                            <span class="line-one">VIEW + PRINT</span>  
+                                            <span class="line-two">TAKE-AWAY MENU</span>
+                                        </a>
+                                        <a class="btn btn-md btn-3d btn-custom-three fx animated fadeInUp" href="#" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                                            <span class="line-one">VIEW + PRINT</span>  
+                                            <span class="line-two">RESTAURANT MENU</span>
+                                        </a>
+                                    </div>
+                                    <!-- <p class="margin-bottom-0">
                                         {{-- The Bombay Cottage was established in 1993, situated in heart of Stamford, England’s finest stone built Town, The Restaurant is in a grade 2 listed building with exposed beams and stones.
                                         <br><br>
                                         The Bombay Cottage can seat up to 65 people in comfort, we cater for parties and group bookings for up to 40 people at one time.<br><br>
                                         <strong> OUR FOOD-</strong> All our food is freshly prepared on site, we use local grown products.<br>
                                         <strong> OUR SERVICE-</strong> All our staffs  are  fully trained to satisfy  your needs, we always give 100 percent. --}}
                                         <?php
-                                            echo html_entity_decode($WelcomeContent->description)
+                                            //echo html_entity_decode($WelcomeContent->description)
                                         ?>
-                                    </p>
+                                    </p> -->
                                 </div>
                                 {{-- <div class="cell-6">
                                     <p class="margin-bottom-0">  OUR MOTO- Our taste is simple,  We like the Best.!!                                                <br> <br>
@@ -47,9 +92,9 @@ $Seo=$objSTD->Seo();
                                 </div> --}}
                             </div>
                             <div class="cell-3">
-                                <div class="material-card-content" style="border-top-color: rgb(246, 187, 66);">
+                                <div class="material-card-content del-info-card" style="border-top-color: rgb(246, 187, 66);">
 
-                                    {{-- <h4 class="material-card-title">FREE HOME DELIVERY</h4>
+                                    <h4 class="material-card-title">FREE HOME DELIVERY</h4>
                                     <p class="material-card-summary">Within 5 Miles Radius </p>
                                     <p class="material-card-summary">Minimum Order 15 pounds</p>
                                     <p class="material-card-summary">*Further distance can be arranged</p>
@@ -61,7 +106,7 @@ $Seo=$objSTD->Seo();
                                     <hr>
                                     <p class="material-card-summary">Sunday Buffet Lunch</p>
                                     <p class="material-card-summary">LUNCH: 12.00PM - 03.00PM &amp;</p>
-                                    <p class="material-card-summary">DINNER: 06.00PM - 11.30PM</p> --}}
+                                    <p class="material-card-summary">DINNER: 06.00PM - 11.30PM</p>
 
                                     <?php 
                                         echo html_entity_decode($WelcomeContent->free_home_delivery)
@@ -80,40 +125,30 @@ $Seo=$objSTD->Seo();
                 <div class="block-bg-1 sectionWrapper">
                     <div class="container">
                         <div class="row">
-                            {{-- <div class="cell-3 fx animated fadeInUp" data-animate="fadeInUp" data-animation-delay="200" style="animation-delay: 200ms;">
-                                <div class="grid3column uppercase cus_image">
-                                    <h3>Trip advisor</h3>
-                                    <img alt="" src="{{url('front-theme/images/content-front-bottom-picture-1.jpg')}}">
-                                    <a class="btn btn-md btn-3d btn-white fx animated fadeInUp" href="#" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
-                                        <span><i class="fa fa-chain selectedI"></i>read more...</span>
-                                    </a>
-                                </div>
-                            </div> --}}
                             <div class="cell-4 fx animated fadeInUp" data-animate="fadeInUp" data-animation-delay="200" style="animation-delay: 200ms;">
                                 <div class="grid3column uppercase cus_image">
-                                    <h3>Herbs & Spices</h3>
+                                    <h3>PARTY MENUS</h3>
                                     <img alt="" src="{{url('front-theme/images/spices.jpg')}}">
-                                    <a class="btn btn-md btn-3d btn-white fx animated fadeInUp" href="{{url('static-object')}}" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
-                                        <span><i class="fa fa-chain selectedI"></i>read more...</span>
+                                    <a class="btn btn-md btn-3d btn-custom-small fx animated fadeInUp" href="{{url('static-object')}}" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                                        Find Out More
                                     </a>
                                 </div>
                             </div>
                             <div class="cell-4 fx animated fadeInUp" data-animate="fadeInUp" data-animation-delay="200" style="animation-delay: 200ms;">
                                 <div class="grid3column uppercase cus_image">
-                                    <h3>SPECIAL SET MEAL</h3>
+                                    <h3>GREAT VALUE LUNCH</h3>
                                     <img alt="" src="{{url('front-theme/images/offers.jpg')}}">
-                                    <a class="btn btn-md btn-3d btn-white fx animated fadeInUp" href="{{url('order-item#pro21')}}" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
-                                        <span><i class="fa fa-chain selectedI"></i>read more...</span>
+                                    <a class="btn btn-md btn-3d btn-custom-small fx animated fadeInUp" href="{{url('order-item#pro21')}}" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                                        View Full Menu
                                     </a>
                                 </div>
                             </div>
                             <div class="cell-4 fx animated fadeInUp" data-animate="fadeInUp" data-animation-delay="200" style="animation-delay: 200ms;">
                                 <div class="grid3column uppercase cus_image">
-                                    <h3>Reserve Your Table</h3>
+                                    <h3>Reserve A Table</h3>
                                     <img alt="" src="{{url('front-theme/images/table_booking.jpg')}}">
-                                    <a class="btn btn-md btn-3d btn-white fx animated fadeInUp" href="{{url('table-booking')}}" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
-                                <!--<a class="btn btn-md btn-3d btn-white fx animated fadeInUp" href="{{url('Taste of Bengal Menu Clacton 2019.pdf')}}" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;"> -->
-                                        <span><i class="fa fa-chain selectedI"></i>Click for Booking...</span>
+                                    <a class="btn btn-md btn-3d btn-custom-small fx animated fadeInUp" href="{{url('table-booking')}}" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                                        Book Your Table
                                     </a>
                                 </div>
                             </div>

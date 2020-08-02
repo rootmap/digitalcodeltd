@@ -13,7 +13,7 @@ $Seo=$objSTD->Seo();
         <div class="container">
             <div class="row">
                 <div class="cell-12">
-                    <h1 class="fx proban" data-animate="fadeInLeft">Order Your Food Online</h1>
+                    <h1 class="fx proban head-title-product" data-animate="fadeInLeft">Order Your Food Online</h1>
                     
                         
                     </div>
@@ -25,10 +25,19 @@ $Seo=$objSTD->Seo();
 
 
 
-    <div class="sectionWrapper">
+    <div class="sectionWrapper product-sec-wrap">
         <div class="container">
             <div class="row">
                 <div class="box success-box center hidden">Your item was added succesfully.</div>
+                <div class="clearfix"></div>
+                <div class="cell-6">
+                    <div class="button-group" style="text-align: center;">
+                        <a class="btn btn-md btn-3d btn-block btn-cart-info-mobile modal-trigger fx animated fadeInUp" href="#" data-modal="alergy_alert" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                            <span>FOOD ALLERGIES AND</span>
+                            <span>INTOLERANCE INFORMATION</span>
+                        </a>
+                    </div>
+                </div>
                 <div class="clearfix"></div>
                 <aside class="cell-3 left-shop">
                     @include('frontend.extra.product_left_bar')
@@ -37,15 +46,26 @@ $Seo=$objSTD->Seo();
 
                 <!-- cell6  class="proButton modal-trigger" data-modal="modal-name" -->
                 <div class="cell-6">
-                    <div class="button-group">
-                        <a class="btn btn-primary modal-trigger online-smart-way model-restaurant-btn fx animated fadeInUp" href="#" data-animate="fadeInUp" data-animation-delay="600" data-modal="delivery_time_detail" style="animation-delay: 600ms;">
-                            <span><i class="fa fa-bus selectedI"></i>Delivery Time</span> </a>
+                    <div class="button-group" style="text-align: center;">
+                        {{--<a class="btn btn-primary modal-trigger online-smart-way model-restaurant-btn fx animated fadeInUp" href="#" data-animate="fadeInUp" data-animation-delay="600" data-modal="delivery_time_detail" style="animation-delay: 600ms;">--}}
+                            {{--<span><i class="fa fa-bus selectedI"></i>Delivery Time</span> </a>--}}
 
-                        <a class="btn btn-primary modal-trigger online-smart-way model-restaurant-btn fx animated fadeInUp" href="#" data-animate="fadeInUp" data-modal="alergy_alert" data-animation-delay="600" style="animation-delay: 600ms;">
-                            <span><i class="fa fa-bus selectedI"></i>Allergy Alert</span> </a>
+                        {{--<a class="btn btn-primary modal-trigger online-smart-way model-restaurant-btn fx animated fadeInUp" href="#" data-animate="fadeInUp" data-modal="alergy_alert" data-animation-delay="600" style="animation-delay: 600ms;">--}}
+                            {{--<span><i class="fa fa-bus selectedI"></i>Allergy Alert</span> </a>--}}
 
-                        <a class="btn btn-primary modal-trigger online-smart-way model-restaurant-btn  fx animated fadeInUp" href="#" data-modal="delivery_detail_info" data-animate="fadeInUp" data-animation-delay="600" style="animation-delay: 600ms;">
-                            <span><i class="fa fa-bus selectedI"></i>Delivery Info</span> </a>
+                        {{--<a class="btn btn-primary modal-trigger online-smart-way model-restaurant-btn  fx animated fadeInUp" href="#" data-modal="delivery_detail_info" data-animate="fadeInUp" data-animation-delay="600" style="animation-delay: 600ms;">--}}
+                            {{--<span><i class="fa fa-bus selectedI"></i>Delivery Info</span> </a>--}}
+
+                        {{--<a class="btn btn-md btn-3d btn-cart-info modal-trigger fx animated fadeInUp" href="#" data-modal="delivery_time_detail" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">--}}
+                            {{--<span class="line-one">DELIVERY TIME</span>--}}
+                        {{--</a>--}}
+                        <a class="btn btn-md btn-3d btn-block btn-cart-info-desktop modal-trigger fx animated fadeInUp" href="#" data-modal="alergy_alert" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                            <span>FOOD ALLERGIES AND</span>
+                            <span>INTOLERANCE INFORMATION</span>
+                        </a>
+                        {{--<a class="btn btn-md btn-3d btn-cart-info modal-trigger fx animated fadeInUp" href="#" data-modal="delivery_detail_info" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">--}}
+                            {{--<span class="line-one">DELIVERY INFO</span>--}}
+                        {{--</a>--}}
                     </div>
                     
                     @if(isset($orderINfoText))
