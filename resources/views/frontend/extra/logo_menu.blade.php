@@ -14,6 +14,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .sticky .logo a img {
         margin-top: 18px !important;
         height: 60px;
+        width: 75%;
         /* margin-left: 55PX; */
     }
     .mbtext{

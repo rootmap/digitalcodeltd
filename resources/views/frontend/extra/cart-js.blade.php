@@ -513,18 +513,21 @@
                                 var dataSTRExtras ='';
                                 dataSTR+='<li id="cart-row-'+index+'" data-id="'+row.raw_flavour+'">';
                                 dataSTR+='   <div class="cart-body">';
-                                dataSTR+='      <a class="cart-item-highlight" href="javascript:void(0);"><span class="cartQUANIT" style="color:#777;">'+row.qty+'</span> X '+row.item;
+                                dataSTR+='      <a class="cart-item-highlight" href="javascript:void(0);" style="font-size:11px !important;"><span class="cartQUANIT" style="color:#777;">'+row.qty+'</span><span style="color:#b57c00"> X '+row.item+'</span>';
                                     dataSTRExtras+='        <div class="cart-data-mini-box">';
                                     dataSTRExtras+='            <div  class="price cart-extra-mini-box" style="width:100%;">';
                                     $.each(row.flavour,function(k,r){
-                                        dataSTRExtras+='                <div class="price" style="font-size:11px;">+ '+$.trim(r)+'</div>';
+                                        dataSTRExtras+='<div class="price" style="font-size:11px;">+ '+$.trim(r)+'</div>';
                                     });
                                     dataSTRExtras+='            </div>';
                                     dataSTRExtras+='        </div>';
                                 dataSTR+='      <span style="color:#777;"> £</span><span class="cartItemPricePR" style="color:#777;">'+parseFloat(row.price).toFixed(2)+'</span></a>';
                                 dataSTR+=dataSTRExtras;
                                 dataSTR+='   </div>';
-                                dataSTR+='   <a class="remove" href="javascript:delRowLi('+index+')"><i class="fa fa-times" title="Remove"></i></a>';
+                                dataSTR+='   <a style="background-color: #b57c00; color: #fff !important; padding: 2px; border-radius:50%;height: 20px; width: 20px;" class="remove" href="javascript:delRowLi('+index+')"><i class="fa fa-times" title="Remove"></i></a>' +
+                                    '<input style="width:50px;text-align:center;position: absolute; right: 0; top: 0;" type="text" name="quantity[]" id="quantity_'+index+'" value="1">' +
+                                    '<a style="background-color: #d9534f; color: #fff !important; padding: 2px; border-radius:50%;height: 20px; width: 20px;" class="increase" href="javascript:increaseQty('+index+')"><i class="fa fa-plus" title="Increase"></i></a>' +
+                                    '<a style="background-color: #d9534f; color: #fff !important; padding: 2px; border-radius:50%;height: 20px; width: 20px;" class="decrease" href="javascript:decreaseQty('+index+')"><i class="fa fa-minus" title="Decrease"></i></a>';
                                 dataSTR+='</li>';
                                 //return dataSTR;
                                 $(".mini-cart-list").append(dataSTR);

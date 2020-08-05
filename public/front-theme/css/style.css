@@ -1422,14 +1422,14 @@ header.top-head-4 .logo {
 	font-weight: bold !important;
 }
 
-/*.btn-custom-small{*/
-	/*background: #DEC465 !important;*/
-	/*-webkit-box-shadow: 0 5px 0 #323335;*/
-	/*box-shadow: 0 5px 0 #323335;*/
-	/*font-size: 16px;*/
-	/*margin: 10px;*/
-	/*color: #000 !important;*/
-/*}*/
+.btn-custom-small{
+	background: #DEC465 !important;
+	-webkit-box-shadow: 0 5px 0 #323335;
+	box-shadow: 0 5px 0 #323335;
+	font-size: 16px;
+	margin: 10px;
+	color: #000 !important;
+}
 
 
 
@@ -5283,16 +5283,50 @@ img.loader{
 }
 .mini-cart-list a.remove {
 	position: absolute;
-	right: 5px;
+	right: 55px;
 	top: 0;
+    text-align: center;
 }
 .mini-cart-list a.remove i {
 	font-size: 130%;
-	color: #bababa;
+	color: #fff;
 }
 .mini-cart-list a.remove:hover i {
 	color: #000;
 }
+
+
+.mini-cart-list a.increase {
+    position: absolute;
+    right: 30px;
+    top: 26px;
+    text-align: center;
+}
+.mini-cart-list a.increase i {
+    font-size: 110%;
+    color: #fff;
+}
+.mini-cart-list a.increase:hover i {
+    color: #000;
+}
+
+
+.mini-cart-list a.decrease {
+    position: absolute;
+    right: 5px;
+    top: 26px;
+    text-align: center;
+}
+.mini-cart-list a.decrease i {
+    font-size: 110%;
+    color: #fff;
+}
+.mini-cart-list a.decrease:hover i {
+    color: #000;
+}
+
+
+
 .mini-cart-total {
 	padding: 0 10px 20px 10px;
 	font-weight: 400;
@@ -5527,7 +5561,8 @@ img.loader{
 	border: 1px #ddd solid;
 	border-top: 0px;
 	padding:10px;
-	overflow:hidden
+	overflow:hidden;
+    background: #ffffff;
 }
 .widget-content a{
     color: #666;

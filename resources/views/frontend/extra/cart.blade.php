@@ -46,7 +46,7 @@
                                 <img  class="cart-data-logo" src="{{url('front-theme/images/cart-icon.png')}}">
                             </div>
                             <div class="pull-left cart">
-                                <span class="pull-left item-display">Your Selected items</span>
+                                <span class="pull-left item-display" style="color: #0F64B4; font-weight: bold; font-size: 12px;">Your Selected items</span>
                                 <span class="cart_item mini_shopping-cart-quantity pull-left text-center" style="display: inline; border-radius: 5px;">0</span>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                                 
                                 @if($tab->collection_only==1)
                                     <input style="display: none;"  type="radio" value="Delivery" name="rec" id="rec_1"> 
-                                    <label class="cell-8 btn btn-danger" style="margin-right: 20px; margin-left: 10px;  text-transform: capitalize; ">
+                                    <label class="cell-8 btn btn-danger" style="text-transform: capitalize; width: 100%;">
                                         <input  checked="checked" readonly="readonly" style="position: absolute; margin-top:8px; margin-left: -78px;" type="radio" value="Collect" name="rec" id="rec_0"> 
                                         <span> Only Collection</span>
                                     </label>
@@ -71,22 +71,22 @@
                                 @else
 
                                     <label class="cell-5 btn btn-danger" style="margin-right: 20px; margin-left: 10px; text-transform: capitalize;">
-                                        <input checked="checked" style="position: absolute; margin-top:8px; margin-left: -17px; "  type="radio" value="Delivery" name="rec" id="rec_1"> 
+                                        <input checked="checked" style="position: absolute; margin-top:8px; margin-left: -17px; "  type="radio" value="Delivery" name="rec" id="rec_1">
                                         Delivery
                                     </label>
                                     <label class="cell-5 btn btn-danger" style=" text-transform: capitalize; padding-left: 25px;">
-                                        <input style="position: absolute; margin-top:8px; margin-left: -48px;" type="radio" value="Collect" name="rec" id="rec_0"> 
+                                        <input style="position: absolute; margin-top:8px; margin-left: -48px;" type="radio" value="Collect" name="rec" id="rec_0">
                                         <span>Collection</span>
                                     </label>
 
                                 @endif
-                                
+
                                 
                             </div>
                             <div class="mini-cart-total">
                                 <div class="clearfix">
                                     <div class="left">Sub-Total:</div>
-                                    <div class="right mini_cart-subtotal">£<span>230.00</span></div>
+                                    <div class="right mini_cart-subtotal" style="text-align: right;">£<span>230.00</span> </div>
                                 </div>
                                 @if(isset($common))
                                     <div  data-disamount-type="{{$common->discount_option}}"  class="clearfix spend-discount" data-disamount-limit="{{$common->minimum_amount}}" data-discount="{{$common->discount_amount}}">
@@ -112,19 +112,19 @@
                                 @if(isset($tax))
                                     <div class="clearfix tax-space">
                                         <div class="left">Tax (<span data-type="1">{{$tax->tax_amount}}</span>):</div>
-                                        <div class="right">£<span>0.00</span></div>
+                                        <div class="right" style="text-align: right;">£<span>0.00</span></div>
                                     </div>
                                 @endif
 
                                 <div class="clearfix discount-space">
                                     <div class="left">Discount <span></span>:</div>
-                                    <div class="right">£<span>0.00</span></div>
+                                    <div class="right" style="text-align: right;">£<span>0.00</span></div>
                                 </div>
                                 <div class="clearfix">
                                 </div>
                                 <div class="clearfix">
                                     <div class="left">Total:</div>
-                                    <div class="right total-cart-check-price">£<span>200.20</span></div>
+                                    <div class="right total-cart-check-price" style="text-align: right;">£<span>200.20</span></div>
                                 </div>
                             </div>
                             @if ($orderINfoText->isoffline==0)
