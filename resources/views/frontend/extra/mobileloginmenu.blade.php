@@ -38,8 +38,8 @@
     @endif
     
 </div>
-{{-- <div class="cart-icon fx" id="mobileCartMenuShort" data-animate="fadeInRight" style="margin-top: 23px; margin-right: 20px;">
+<div class="cart-icon fx" id="mobileCartMenuShort" data-animate="fadeInRight" style="margin-top: 23px; margin-right: 20px;">
     <div class="cart-heading">
         <i class="fa fa-shopping-cart"></i><span id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span>
     </div>
-</div> --}}
+</div>

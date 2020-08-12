@@ -51,7 +51,7 @@ $Seo=$objSTD->Seo();
                                         <P>We aim to honour our 30 minute delivery of orders. An order for three or more people, or during our busy periods Friday & Saturday evenings 6 till 8 - allow 45 minutes for your food order pick-up</P>
                                         <P class="red-text">We're sorry that we no longer offer home delivery service</P>
                                     </div>
-                                    <div class="cell-12 home-buttons">
+                                    <div class="cell-12 home-buttons hb-first-row">
                                         <a class="btn btn-md btn-3d btn-custom-one fx animated fadeInUp" href="#" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
                                             <span class="line-one">TAKE-AWAY MENU</span>  
                                             <span class="line-two">PLACE YOUR ORDER</span>                                              

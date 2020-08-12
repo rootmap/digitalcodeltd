@@ -566,28 +566,28 @@ $otherExtraPage=$objSTD->otherExtraPage();
     <div class="container">
         <div class="row">
             <div class="logo cell-3">
-                {{-- <a style="" href="{{url('home')}}"></a> --}}
-                <a href="{{url('home')}}">
-{{--                    <img src="{{url('upload/logo/'.$Seo->site_logo)}}" >--}}
-                    <img src="{{url('/')}}/images/logo.jpg">
+                
+                <a href="<?php echo e(url('home')); ?>">
+
+                    <img src="<?php echo e(url('/')); ?>/images/logo.jpg">
                 </a>
                 <div class="mobileHide">
                     <!-- <a href="#"><span style="margin-left:0 !important" id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span> <b style="margin-left:5px;">View Basket</b></a> -->
-                    @if (Request::path() == 'home')
+                    <?php if(Request::path() == 'home'): ?>
                     <div class="buttonlogo">
-                        {{--<a class="btn btn-md btn-orange btn-outlined fx animated fadeInDown" href="{{url('order-item')}}" data-animate="fadeInDown" data-animation-delay="700" style="animation-delay: 700ms;"> <span><i class="fa fa-shopping-cart"></i>Order Your Food Online</span> </a>--}}
+                        
 
-                        <a class="btn btn-md btn-custom-top" href="{{url('order-item')}}" style="background: #b71c1c !important; -webkit-box-shadow: 0 5px 0 #CBA574; box-shadow: 0 5px 0 #CBA574; font-size: 13px; margin: 5px; width: 150px !important; height: 55px !important;">
+                        <a class="btn btn-md btn-custom-top" href="<?php echo e(url('order-item')); ?>" style="background: #b71c1c !important; -webkit-box-shadow: 0 5px 0 #CBA574; box-shadow: 0 5px 0 #CBA574; font-size: 13px; margin: 5px; width: 150px !important; height: 55px !important;">
                             <span class="line-one" style="color:#fff;">Order Online</span>
                             <span class="line-two">(10% Discount)</span>
                         </a>
 
-                        <a class="btn btn-md btn-custom-top" href="{{url('order-item')}}" style="background: #b71c1c !important; -webkit-box-shadow: 0 5px 0 #CBA574; box-shadow: 0 5px 0 #CBA574; font-size: 13px; margin: 5px; width: 150px !important; height: 55px !important;">
+                        <a class="btn btn-md btn-custom-top" href="<?php echo e(url('order-item')); ?>" style="background: #b71c1c !important; -webkit-box-shadow: 0 5px 0 #CBA574; box-shadow: 0 5px 0 #CBA574; font-size: 13px; margin: 5px; width: 150px !important; height: 55px !important;">
                             <span class="line-one" style="color:#fff;">Table</span>
                             <span class="line-two">Reservation</span>
                         </a>
                     </div>
-                    @endif    
+                    <?php endif; ?>    
                     
                 </div>
                 <div class="cart-icon fx mobileloginmenu" id="mobileCartMenuShort" data-animate="fadeInRight" style="position: absolute; right: 0; top: -23px;">
@@ -601,76 +601,66 @@ $otherExtraPage=$objSTD->otherExtraPage();
                 <!-- top navigation menu start -->
                 <nav class="top-nav mega-menu">
                     <ul>
-                        <li class="{{ Request::path() == 'home' ? 'selected' : '' }}">
-                            <a href="{{url('home')}}">
-{{--                                <i class="fa fa-home"></i>--}}
+                        <li class="<?php echo e(Request::path() == 'home' ? 'selected' : ''); ?>">
+                            <a href="<?php echo e(url('home')); ?>">
+
                                 <span>Home</span>
                             </a>
                         </li>
-                        <li class="{{ Request::path() == 'order-item' ? 'selected' : '' }}">
-                            <a href="{{url('order-item')}}">
-{{--                                <i class="fa fa-cart-plus"></i>--}}
+                        <li class="<?php echo e(Request::path() == 'order-item' ? 'selected' : ''); ?>">
+                            <a href="<?php echo e(url('order-item')); ?>">
+
                                 <span>Online Orders</span>
                             </a>
-                            @if(isset($mainmenu))
+                            <?php if(isset($mainmenu)): ?>
                             <ul>
                                 <li>
-                                    <a class="pagetitle" id="productinclusive_meal" href="{{url('/order-item')}}#pro_inclusive_meal">
+                                    <a class="pagetitle" id="productinclusive_meal" href="<?php echo e(url('/order-item')); ?>#pro_inclusive_meal">
                                         ALL INCLUSIVE MEAL
                                     </a>
                                 </li>
-                                @foreach($mainmenu as $menu)
-                                    <li><a class="pagetitle" id="product{{$menu->id}}" href="{{url('/order-item')}}#pro{{$menu->id}}">{{$menu->name}}</a></li>
-                                @endforeach
+                                <?php $__currentLoopData = $mainmenu; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $menu): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <li><a class="pagetitle" id="product<?php echo e($menu->id); ?>" href="<?php echo e(url('/order-item')); ?>#pro<?php echo e($menu->id); ?>"><?php echo e($menu->name); ?></a></li>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </ul>
-                            @endif
+                            <?php endif; ?>
                         </li>
-                        <li class="{{ Request::path() == 'our-offer' ? 'selected' : '' }}">
-                            <a href="{{url('our-offer')}}">
-{{--                                <i class="fa fa-gift"></i>--}}
+                        <li class="<?php echo e(Request::path() == 'our-offer' ? 'selected' : ''); ?>">
+                            <a href="<?php echo e(url('our-offer')); ?>">
+
                                 <span>Taj Offers</span>
                             </a>
                         </li>
-                        <li class="{{ Request::path() == 'table-booking' ? 'selected' : '' }}">
-                            <a href="{{url('table-booking')}}">
-{{--                                <i class="fa fa-cutlery"></i>--}}
+                        <li class="<?php echo e(Request::path() == 'table-booking' ? 'selected' : ''); ?>">
+                            <a href="<?php echo e(url('table-booking')); ?>">
+
                                 <span>Table Booking</span>
                             </a>
                         </li>
-                        <li class="{{ Request::path() == 'gallery' ? 'selected' : '' }}">
-                            <a href="{{url('gallery')}}">
-{{--                                <i class="fa fa-picture-o"></i>--}}
+                        <li class="<?php echo e(Request::path() == 'gallery' ? 'selected' : ''); ?>">
+                            <a href="<?php echo e(url('gallery')); ?>">
+
                                 <span>Taj Gallery</span>
                             </a>
                         </li>
                         <li class="gallery">
-                            <a href="{{url('gallery')}}">
-{{--                                <i class="fa fa-picture-o"></i>--}}
+                            <a href="<?php echo e(url('gallery')); ?>">
+
                                 <span>info</span>
                             </a>
                         </li>
                         
-                     {{--@if(count($otherExtraPage)>0)
-                            <li class="{{ Request::path() == 'order-item' ? 'selected' : '' }}"><a href="javascript:void(0);"><i class="fa fa-info"></i><span>INFO</span></a>
-                            @if(isset($otherExtraPage))
-                            <ul>
-                                @foreach($otherExtraPage as $menu)
-                                    <li><a class="pagetitle" id="extrapage{{$menu->id}}" href="{{url('/pages/'.$menu->id.'/'.$menu->name)}}">{{$menu->name}}</a></li>
-                                @endforeach
-                            </ul>
-                            @endif
-                        </li>
-                        @endif--}}
+                     
                         
-                         <li class="{{ Request::path() == 'reviews' ? 'selected' : '' }}">
-                             <a href="{{url('reviews')}}">
-{{--                                 <i class="fa fa-comments"></i>--}}
+                         <li class="<?php echo e(Request::path() == 'reviews' ? 'selected' : ''); ?>">
+                             <a href="<?php echo e(url('reviews')); ?>">
+
                                  <span>Feedback</span>
                              </a>
                          </li>
-                        <li class="{{ Request::path() == 'contact-us' ? 'selected' : '' }}">
-                            <a href="{{url('contact-us')}}">
-{{--                                <i class="fa fa-phone"></i>--}}
+                        <li class="<?php echo e(Request::path() == 'contact-us' ? 'selected' : ''); ?>">
+                            <a href="<?php echo e(url('contact-us')); ?>">
+
                                 <span>Contact</span>
                             </a>
                         </li>
@@ -697,9 +687,9 @@ $otherExtraPage=$objSTD->otherExtraPage();
     </div>
 </header>
     <div class="my-sticky-element mobileloginmenu" data-sticky="true">
-        @if (Request::path() == 'order-item')
-           @include('frontend.extra.mobileloginmenu')
-        @endif
+        <?php if(Request::path() == 'order-item'): ?>
+           <?php echo $__env->make('frontend.extra.mobileloginmenu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php endif; ?>
         
         
     </div>
