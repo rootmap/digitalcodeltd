@@ -9113,6 +9113,10 @@ i.icon {
 /*askmdkasdjnajnajsnkjdan*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.welcome {
+		padding: 15px 0;
+		/* text-align: center; */
+	}
 	.hb-first-row{
 		display: none;
 	}

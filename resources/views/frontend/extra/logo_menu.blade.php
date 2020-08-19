@@ -25,6 +25,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-size: 24px;
         margin-top: 15px;
         margin-left: 45px;
+        width: 75px;
     }
     header.top-head .logo a 
     {
@@ -89,6 +90,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-size: 24px;
         margin-top: 15px;
         margin-left: 45px;
+        width: 75px;
     }
     header.top-head .logo a 
     {
@@ -157,6 +159,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-size: 24px;
         margin-top: 15px;
         margin-left: 45px;
+        width: 75px;
     }
    header.top-head .logo a 
     {
@@ -238,6 +241,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-size: 24px;
         margin-top: 15px;
         margin-left: 45px;
+        width: 75px;
     }
     header.top-head .logo a 
     {
@@ -318,6 +322,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-size: 24px;
         margin-top: 15px;
         margin-left: 45px;
+        width: 75px;
     }
     header.top-head .logo a 
     {
@@ -393,10 +398,13 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .del-info-card{
         margin-top: 15px;
     }
+
     .sticky .logo a img{
-        margin-top: 15px !important;
+        margin-top: 50px !important;
         /*height: 50px;*/
-        margin-left: 15PX;
+        margin-left: 55PX;
+        position: absolute;
+        left: 49px;
     }
     .mbtext{
         display: block;
@@ -405,12 +413,13 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-weight: bold;
         font-size: 24px;
         margin-left: 45px;
+        width: 75px !important;
     }
-    header.top-head .logo a {
+    /*header.top-head .logo a {*/
         /*height: 15px;*/
-        width: 280px;
-        margin-top: -7px;
-    }
+        /*width: 280px;*/
+        /*margin-top: -7px;*/
+    /*}*/
 
     .cart-icon{
         position: absolute;
@@ -418,12 +427,18 @@ $otherExtraPage=$objSTD->otherExtraPage();
         top: -23px;
     }
 
-    /*header.top-head .logo a
+    header.top-head .logo a
     {
-        height: 56px;
+        height: 35px;
         width: 280px;
         margin-top: -7px;
-    }*/
+    }
+
+    header.top-head.sticky .logo a {
+        height: 45px;
+        width: 280px;
+        margin-top: -7px;
+    }
     /*.logo img{*/
         /*width: 120px;*/
         /*height: 56;*/
@@ -435,7 +450,8 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .logo img {
         width: 150px;
         margin-left: 15px;
-        top: -13px;
+        top: -47px;
+        right: 0px;
         position: absolute;
     }
     .mobileHide a {
@@ -490,6 +506,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-weight: bold;
         font-size: 24px;
         margin-left: 45px;
+        width: 75px;
     }
     header.top-head .logo a 
     {
@@ -501,6 +518,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .logo img{
         width: 120px;
         height: 62px;
+        right: 0px;
     }
     .mobileHide a {
         display: block !important;
@@ -572,7 +590,8 @@ $otherExtraPage=$objSTD->otherExtraPage();
                     <img src="{{url('/')}}/images/logo.jpg">
                 </a>
                 <div class="mobileHide">
-                    <!-- <a href="#"><span style="margin-left:0 !important" id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span> <b style="margin-left:5px;">View Basket</b></a> -->
+                    <a href="skype:{{$ContactDetail->contact_phone}}?call"><i class="fa fa-phone"></i> Call Us: <b> {{$ContactDetail->contact_phone}} </b></a>
+                    <a href="#"><span style="margin-left:0 !important" id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span> <b style="margin-left:5px;">View Basket</b></a>
                     @if (Request::path() == 'home')
                     <div class="buttonlogo">
                         {{--<a class="btn btn-md btn-orange btn-outlined fx animated fadeInDown" href="{{url('order-item')}}" data-animate="fadeInDown" data-animation-delay="700" style="animation-delay: 700ms;"> <span><i class="fa fa-shopping-cart"></i>Order Your Food Online</span> </a>--}}
@@ -590,11 +609,11 @@ $otherExtraPage=$objSTD->otherExtraPage();
                     @endif    
                     
                 </div>
-                <div class="cart-icon fx mobileloginmenu" id="mobileCartMenuShort" data-animate="fadeInRight" style="position: absolute; right: 0; top: -23px;">
-                    <div class="cart-heading">
-                        <i class="fa fa-shopping-cart"></i><span id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span>
-                    </div>
-                </div>
+                {{--<div class="cart-icon fx mobileloginmenu" id="mobileCartMenuShort" data-animate="fadeInRight" style="position: absolute; right: 0; top: -23px;">--}}
+                    {{--<div class="cart-heading">--}}
+                        {{--<i class="fa fa-shopping-cart"></i><span id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
             <div class="cell-9 top-menu">
 

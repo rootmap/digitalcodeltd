@@ -84,10 +84,10 @@
                                 
                             </div>
                             <div class="mini-cart-total">
-                                <div class="clearfix">
-                                    <div class="left">Sub-Total:</div>
-                                    <div class="right mini_cart-subtotal" style="text-align: right;">£<span>230.00</span> </div>
-                                </div>
+                                {{--<div class="clearfix">--}}
+                                    {{--<div class="left">Sub-Total:</div>--}}
+                                    {{--<div class="right mini_cart-subtotal" style="text-align: right;">£<span>230.00</span> </div>--}}
+                                {{--</div>--}}
                                 @if(isset($common))
                                     <div  data-disamount-type="{{$common->discount_option}}"  class="clearfix spend-discount" data-disamount-limit="{{$common->minimum_amount}}" data-discount="{{$common->discount_amount}}">
                                         @if(!empty($common->message))
