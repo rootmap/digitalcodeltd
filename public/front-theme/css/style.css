@@ -482,9 +482,9 @@ header.top-head {
 	width: 100%;
 	background: transparent !important;
 }
-header.top-head .logo{
-	margin-top: 20px;
-}
+/*header.top-head .logo{*/
+	/*margin-top: 20px;*/
+/*}*/
 header.top-head .logo a {
 	display: table;
 	width: 207px;

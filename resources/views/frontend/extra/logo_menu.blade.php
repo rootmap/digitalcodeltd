@@ -12,7 +12,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
         margin-top: 0px;
     }
     .sticky .logo a img {
-        margin-top: 18px !important;
+        /*margin-top: 18px !important;*/
         height: 60px;
         width: 75%;
         /* margin-left: 55PX; */
@@ -29,7 +29,6 @@ $otherExtraPage=$objSTD->otherExtraPage();
     }
     header.top-head .logo a 
     {
-       
         width: 100%;
         height: 74px;
         display: table;
@@ -38,7 +37,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .logo img{
         width: 100%;
         height: 92px;
-        top: -20px;
+        top: 0px;
         position: absolute;
     }
     .mobileHide a {
@@ -71,6 +70,9 @@ $otherExtraPage=$objSTD->otherExtraPage();
         position: absolute;
         right: 0;
         top: -23px;
+    }
+    .def-home-cart-btn{
+        display: none;
     }
 }
 /* 
@@ -139,6 +141,9 @@ $otherExtraPage=$objSTD->otherExtraPage();
         position: absolute;
         right: 0;
         top: -23px;
+    }
+    .def-home-cart-btn{
+        display: none;
     }
 }
 
@@ -222,6 +227,9 @@ $otherExtraPage=$objSTD->otherExtraPage();
         right: 0;
         top: -23px;
     }
+    .def-home-cart-btn{
+        display: none;
+    }
 }
 
 /* 
@@ -303,6 +311,9 @@ $otherExtraPage=$objSTD->otherExtraPage();
         right: 0;
         top: -23px;
     }
+    .def-home-cart-btn{
+        display: none;
+    }
 }
 
 /* 
@@ -383,13 +394,16 @@ $otherExtraPage=$objSTD->otherExtraPage();
         right: 0;
         top: -23px;
     }
+    .def-home-cart-btn{
+        display: none;
+    }
 }
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-
+@if (Request::path() == 'order-item')
 @media (min-width: 320px) and (max-width: 480px) {
     .right {
         float: none !important;
@@ -400,14 +414,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
     }
 
     .sticky .logo a img{
-        margin-top: 50px !important;
-        /*height: 50px;*/
+        margin-top: 22px !important;
+        /* height: 50px; */
         margin-left: 55PX;
         position: absolute;
-        left: 49px;
+        left: -3px;
     }
     .mbtext{
-        display: block;
+        display: none !important;
         background-color: #fff;
         color: #b57c00;
         font-weight: bold;
@@ -416,9 +430,9 @@ $otherExtraPage=$objSTD->otherExtraPage();
         width: 75px !important;
     }
     /*header.top-head .logo a {*/
-        /*height: 15px;*/
-        /*width: 280px;*/
-        /*margin-top: -7px;*/
+    /*height: 15px;*/
+    /*width: 280px;*/
+    /*margin-top: -7px;*/
     /*}*/
 
     .cart-icon{
@@ -429,30 +443,33 @@ $otherExtraPage=$objSTD->otherExtraPage();
 
     header.top-head .logo a
     {
-        height: 35px;
+        height: 30px;
         width: 280px;
         margin-top: -7px;
     }
 
     header.top-head.sticky .logo a {
-        height: 45px;
+        height: 27px;
         width: 280px;
         margin-top: -7px;
     }
     /*.logo img{*/
-        /*width: 120px;*/
-        /*height: 56;*/
-        /*margin-top:2px;*/
-        /*margin-left: 30px;*/
-        /*top: -20px;*/
-        /*position: absolute;*/
+    /*width: 120px;*/
+    /*height: 56;*/
+    /*margin-top:2px;*/
+    /*margin-left: 30px;*/
+    /*top: -20px;*/
+    /*position: absolute;*/
     /*}*/
     .logo img {
         width: 150px;
-        margin-left: 15px;
-        top: -47px;
-        right: 0px;
+        top: -20px;
+
+        margin-top: 27px !important;
+        /* height: 50px; */
+        margin-left: 55PX;
         position: absolute;
+        left: -3px;
     }
     .mobileHide a {
         display: block;
@@ -469,8 +486,8 @@ $otherExtraPage=$objSTD->otherExtraPage();
         height: 36px !important;
         margin-bottom: 5px !important;
     }.buttonlogo span{
-        margin-left: 0px;
-    }
+         margin-left: 0px;
+     }
 
     .cell-5 {
         width: 41.66666667%;
@@ -496,7 +513,180 @@ $otherExtraPage=$objSTD->otherExtraPage();
         color: #FFC700 !important;
         font-weight: bold !important;
     }
+
+    .def-home-cart-btn{
+        background: #FF1A00 !important;
+        display: none !important;
+        color: #fff !important;
+        font-size: 13px !important;
+        width: 155px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .def-home-cart-btn .mobileCartMenuShortCartData{
+        color: #fff !important;
+        font-size: 13px !important;
+        margin-left: 0 !important;
+    }
+
+    .sticky .def-home-cart-btn{
+        display: none;
+    }
+    .responsive_mobile_no{
+        margin: 5px auto !important;
+    }
+
+    .cart-icon{
+        background: #FF1A00 !important;
+        display: block;
+        top: -3px !important;
+    }
+
+    .sticky .cart-icon{
+        background: #FF1A00 !important;
+        display: block;
+    }
 }
+@else
+@media (min-width: 320px) and (max-width: 480px) {
+    .right {
+        float: none !important;
+        text-align: center;
+    }
+    .del-info-card{
+        margin-top: 15px;
+    }
+
+    .sticky .logo a img{
+        margin-top: 27px !important;
+        /* height: 50px; */
+        margin-left: 55PX;
+        position: absolute;
+        left: -3px;
+    }
+    .mbtext{
+        display: block;
+        background-color: #fff;
+        color: #b57c00;
+        font-weight: bold;
+        font-size: 24px;
+        margin-left: 45px;
+        width: 75px !important;
+    }
+    /*header.top-head .logo a {*/
+    /*height: 15px;*/
+    /*width: 280px;*/
+    /*margin-top: -7px;*/
+    /*}*/
+
+    .cart-icon{
+        position: absolute;
+        right: 0;
+        top: -23px;
+    }
+
+    header.top-head .logo a
+    {
+        height: 0px;
+        width: 280px;
+        margin-top: -7px;
+    }
+
+    header.top-head.sticky .logo a {
+        height: 27px;
+        width: 280px;
+        margin-top: -7px;
+    }
+    /*.logo img{*/
+    /*width: 120px;*/
+    /*height: 56;*/
+    /*margin-top:2px;*/
+    /*margin-left: 30px;*/
+    /*top: -20px;*/
+    /*position: absolute;*/
+    /*}*/
+    .logo img {
+        width: 150px;
+        margin-left: 15px;
+        top: -27px;
+        right: 0px;
+        position: absolute;
+    }
+    .mobileHide a {
+        display: block;
+        text-align: center;
+        background: none !important;
+        padding: 2.5vh 0vh 0vh 0vh;
+    }
+
+    .buttonlogo{
+        display: block;
+    }
+    .buttonlogo a {
+        padding: 0px;
+        height: 36px !important;
+        margin-bottom: 5px !important;
+    }.buttonlogo span{
+         margin-left: 0px;
+     }
+
+    .cell-5 {
+        width: 41.66666667%;
+    }
+    .btn-custom-top{
+        animation-delay: 1700ms;
+        background: #b71c1c !important;
+        -webkit-box-shadow: 0 5px 0 #CBA574;
+        box-shadow: 0 5px 0 #CBA574;
+        font-size: 13px;
+        margin: 5px;
+        width: 150px !important;
+        height: 55px !important;
+        display:inline-block !important;
+    }
+
+    .btn-custom-top span{
+        line-height: 2;
+    }
+
+    .btn-custom-top .line-two{
+        line-height: 2;
+        color: #FFC700 !important;
+        font-weight: bold !important;
+    }
+
+    .def-home-cart-btn{
+        background: #FF1A00 !important;
+        display: block;
+        color: #fff !important;
+        font-size: 13px !important;
+        width: 155px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .def-home-cart-btn .mobileCartMenuShortCartData{
+        color: #fff !important;
+        font-size: 13px !important;
+        margin-left: 0 !important;
+    }
+
+    .sticky .def-home-cart-btn{
+        display: none;
+    }
+    .responsive_mobile_no{
+        margin: 5px auto !important;
+    }
+
+    .cart-icon{
+        display: none;
+    }
+
+    .sticky .cart-icon{
+        background: #FF1A00 !important;
+        display: block;
+    }
+}
+@endif
 
 @media (min-width: 0px) and (max-width: 319px) {
     .mbtext{
@@ -571,10 +761,22 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-weight: bold !important;
     }
     
-    .cart-icon{
-        position: absolute;
-        right: 0;
-        top: -23px;
+    /*.cart-icon{*/
+        /*position: absolute;*/
+        /*right: 0;*/
+        /*top: -23px;*/
+    /*}*/
+
+    .def-home-cart-btn{
+        background: #b71c1c !important;
+        display: block;
+        color: #fff !important;
+        font-size: 13px !important;
+    }
+    .def-home-cart-btn .mobileCartMenuShortCartData{
+        color: #fff !important;
+        font-size: 13px !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -590,12 +792,16 @@ $otherExtraPage=$objSTD->otherExtraPage();
                     <img src="{{url('/')}}/images/logo.jpg">
                 </a>
                 <div class="mobileHide">
-                    <a href="skype:{{$ContactDetail->contact_phone}}?call"><i class="fa fa-phone"></i> Call Us: <b> {{$ContactDetail->contact_phone}} </b></a>
-                    <a href="#"><span style="margin-left:0 !important" id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span> <b style="margin-left:5px;">View Basket</b></a>
+                    <a href="skype:{{$ContactDetail->contact_phone}}?call" class="responsive_mobile_no"><i class="fa fa-phone"></i> Call Us: <b> {{$ContactDetail->contact_phone}} </b></a>
+                    {{--<a href="#"><span style="margin-left:0 !important" id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span> <b style="margin-left:5px;">View Basket</b></a>--}}
+                    <div class="def-home-cart-btn" id="hh" data-animate="fadeInRight">
+                        <div class="cart-heading">
+                            <i class="fa fa-shopping-cart"></i><span id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span>
+                        </div>
+                    </div>
                     @if (Request::path() == 'home')
                     <div class="buttonlogo">
                         {{--<a class="btn btn-md btn-orange btn-outlined fx animated fadeInDown" href="{{url('order-item')}}" data-animate="fadeInDown" data-animation-delay="700" style="animation-delay: 700ms;"> <span><i class="fa fa-shopping-cart"></i>Order Your Food Online</span> </a>--}}
-
                         <a class="btn btn-md btn-custom-top" href="{{url('order-item')}}" style="background: #b71c1c !important; -webkit-box-shadow: 0 5px 0 #CBA574; box-shadow: 0 5px 0 #CBA574; font-size: 13px; margin: 5px; width: 150px !important; height: 55px !important;">
                             <span class="line-one" style="color:#fff;">Order Online</span>
                             <span class="line-two">(10% Discount)</span>
@@ -609,11 +815,11 @@ $otherExtraPage=$objSTD->otherExtraPage();
                     @endif    
                     
                 </div>
-                {{--<div class="cart-icon fx mobileloginmenu" id="mobileCartMenuShort" data-animate="fadeInRight" style="position: absolute; right: 0; top: -23px;">--}}
-                    {{--<div class="cart-heading">--}}
-                        {{--<i class="fa fa-shopping-cart"></i><span id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
+                <div class="cart-icon fx mobileloginmenu" id="mobileCartMenuShort" data-animate="fadeInRight" style="position: absolute; right: 0; top: -23px;">
+                    <div class="cart-heading">
+                        <i class="fa fa-shopping-cart"></i><span id="cart-count" class="mobileCartMenuShortCartData"><b>0</b> item(s)</span>
+                    </div>
+                </div>
             </div>
             <div class="cell-9 top-menu">
 
