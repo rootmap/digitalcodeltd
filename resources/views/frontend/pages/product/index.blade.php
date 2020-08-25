@@ -32,7 +32,7 @@ $Seo=$objSTD->Seo();
                 <div class="clearfix"></div>
                 <div class="cell-6">
                     <div class="button-group" style="text-align: center;">
-                        <a class="btn btn-md btn-3d btn-block btn-cart-info-mobile modal-trigger fx animated fadeInUp" href="#" data-modal="alergy_alert" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                        <a class="btn btn-md btn-3d btn-block btn-cart-info-mobile modal-trigger fx animated fadeInUp hide_mobile" href="#" data-modal="alergy_alert" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
                             <span>FOOD ALLERGIES AND</span>
                             <span>INTOLERANCE INFORMATION</span>
                         </a>
@@ -59,7 +59,7 @@ $Seo=$objSTD->Seo();
                         {{--<a class="btn btn-md btn-3d btn-cart-info modal-trigger fx animated fadeInUp" href="#" data-modal="delivery_time_detail" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">--}}
                             {{--<span class="line-one">DELIVERY TIME</span>--}}
                         {{--</a>--}}
-                        <a class="btn btn-md btn-3d btn-block btn-cart-info-desktop modal-trigger fx animated fadeInUp" href="#" data-modal="alergy_alert" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
+                        <a class="btn btn-md btn-3d btn-block btn-cart-info-desktop modal-trigger fx animated fadeInUp hide_mobile" href="#" data-modal="alergy_alert" data-animate="fadeInUp" data-animation-delay="1700" style="animation-delay: 1700ms;">
                             <span>FOOD ALLERGIES AND</span>
                             <span>INTOLERANCE INFORMATION</span>
                         </a>
@@ -119,7 +119,7 @@ $Seo=$objSTD->Seo();
                     <!-- button -->
                     <div class="clearfix"></div>
                     <div class="padd-top-20"></div>
-                    <div class="cell-12">
+                    <div class="cell-12 hide_mobile">
                         <blockquote>
                             {!!html_entity_decode($orderINfoText->description)!!} 
                         </blockquote>

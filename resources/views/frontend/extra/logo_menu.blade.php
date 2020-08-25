@@ -546,6 +546,16 @@ $otherExtraPage=$objSTD->otherExtraPage();
         background: #FF1A00 !important;
         display: block;
     }
+    .mini-category-list{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
+    }
+    .btn-cart-info-desktop{
+        display: none;
+    }
+    .hide_mobile{
+        display: none;
+    }
 }
 @else
 @media (min-width: 320px) and (max-width: 480px) {
