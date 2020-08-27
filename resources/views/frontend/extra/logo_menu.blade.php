@@ -74,6 +74,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .def-home-cart-btn{
         display: none;
     }
+
+    .hide_mobile{
+        display: block;
+    }
+    .no_top_border_mobile{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
+    }
 }
 /* 
   ##Device = Laptops, Desktops
@@ -144,6 +152,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
     }
     .def-home-cart-btn{
         display: none;
+    }
+
+    .hide_mobile{
+        display: block;
+    }
+    .no_top_border_mobile{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
     }
 }
 
@@ -230,6 +246,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .def-home-cart-btn{
         display: none;
     }
+
+    .hide_mobile{
+        display: block;
+    }
+    .no_top_border_mobile{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
+    }
 }
 
 /* 
@@ -314,6 +338,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .def-home-cart-btn{
         display: none;
     }
+
+    .hide_mobile{
+        display: block;
+    }
+    .no_top_border_mobile{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
+    }
 }
 
 /* 
@@ -396,6 +428,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
     }
     .def-home-cart-btn{
         display: none;
+    }
+
+    .hide_mobile{
+        display: block;
+    }
+    .no_top_border_mobile{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
     }
 }
 
@@ -546,15 +586,12 @@ $otherExtraPage=$objSTD->otherExtraPage();
         background: #FF1A00 !important;
         display: block;
     }
-    .mini-category-list{
-        border-top: 0 none !important;
-        border-bottom: 0 none !important;
-    }
-    .btn-cart-info-desktop{
-        display: none;
-    }
     .hide_mobile{
         display: none;
+    }
+    .no_top_border_mobile{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
     }
 }
 @else
@@ -695,6 +732,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
         background: #FF1A00 !important;
         display: block;
     }
+
+    .hide_mobile{
+        display: none;
+    }
+    .no_top_border_mobile{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
+    }
 }
 @endif
 
@@ -787,6 +832,14 @@ $otherExtraPage=$objSTD->otherExtraPage();
         color: #fff !important;
         font-size: 13px !important;
         margin-left: 0 !important;
+    }
+
+    .hide_mobile{
+        display: none;
+    }
+    .no_top_border_mobile{
+        border-top: 0 none !important;
+        border-bottom: 0 none !important;
     }
 }
 
