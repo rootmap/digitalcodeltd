@@ -367,18 +367,42 @@ $otherExtraPage=$objSTD->otherExtraPage();
         margin-left: 45px;
         width: 75px;
     }
-    header.top-head .logo a 
-    {
-        height: 56px;
-        width: 280px;
+    /*header.top-head .logo a */
+    /*{*/
+        /*height: 56px;*/
+        /*width: 280px;*/
+        /*margin-top: -7px;*/
+    /*}*/
+    header.top-head .logo a {
+        /* height: 56px; */
+        width: 100%;
         margin-top: -7px;
+        /* text-align: center; */
     }
     .logo img{
+        /* width: 140px; */
+        /* height: 56px; */
+        /* top: -20px; */
+        /* position: absolute; */
         width: 140px;
         height: 56px;
-        /*top: -20px;*/
+        top: 7px;
         position: absolute;
+        left: 72px;
     }
+    .sticky .logo img {
+        /* width: 140px; */
+        /* height: 56px; */
+        /* top: -20px; */
+        /* position: absolute; */
+        width: 140px;
+        height: 56px;
+        top: 2px;
+        position: absolute;
+        left: 72px;
+    }
+
+
     .mobileHide a {
         display: block;
         text-align: center;
@@ -386,8 +410,9 @@ $otherExtraPage=$objSTD->otherExtraPage();
         padding: 2.5vh 0vh 0vh 0vh;
     }
 
-    .buttonlogo{
+    .buttonlogo {
         display: block;
+        text-align: center;
     }
     .buttonlogo a {
         padding: 0px;
@@ -421,11 +446,24 @@ $otherExtraPage=$objSTD->otherExtraPage();
         font-weight: bold !important;
     }
 
-    .cart-icon{
-        position: absolute;
-        right: 0;
-        top: -23px;
+    /*.cart-icon{*/
+        /*position: absolute;*/
+        /*right: 0;*/
+        /*top: -23px;*/
+    /*}*/
+    .cart-icon {
+        background: #FF1A00 !important;
+        position: absolute !important;
+        right: 0 !important;
+        top: 7px !important;
     }
+
+    .sticky .cart-icon{
+        background: #FF1A00 !important;
+        display: block;
+        top: 2px !important;
+    }
+
     .def-home-cart-btn{
         display: none;
     }
@@ -436,6 +474,21 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .no_top_border_mobile{
         border-top: 0 none !important;
         border-bottom: 0 none !important;
+    }
+
+    .home-buttons {
+        text-align: center !important;
+        margin-top: 15px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .right {
+        float: none !important;
+        text-align: center;
+    }
+
+    .hb-first-row {
+        display: none !important;
     }
 }
 
@@ -579,7 +632,7 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .cart-icon{
         background: #FF1A00 !important;
         display: block;
-        top: -3px !important;
+        top: -7px !important;
     }
 
     .sticky .cart-icon{
@@ -666,8 +719,9 @@ $otherExtraPage=$objSTD->otherExtraPage();
         padding: 2.5vh 0vh 0vh 0vh;
     }
 
-    .buttonlogo{
+    .buttonlogo {
         display: block;
+        text-align: center;
     }
     .buttonlogo a {
         padding: 0px;
@@ -731,8 +785,8 @@ $otherExtraPage=$objSTD->otherExtraPage();
     .sticky .cart-icon{
         background: #FF1A00 !important;
         display: block;
+        top: -7px !important;
     }
-
     .hide_mobile{
         display: none;
     }

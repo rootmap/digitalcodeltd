@@ -1431,9 +1431,9 @@ header.top-head-4 .logo {
 	color: #000 !important;
 }
 
-.sticky .cart-icon{
-	top: -8px !important;
-}
+/*.sticky .cart-icon{*/
+	/*top: -8px !important;*/
+/*}*/
 
 
 @media (min-width: 1281px) {
